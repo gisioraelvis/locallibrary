@@ -1,0 +1,14 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #[em LocalLibrary], A simple Library website written in NodeJS, Express and Pug templates
+
+  h1 Dynamic content
+
+    ul
+      li #[strong Books:] !{books}
+      li #[strong Copies:] !{bookInstances}
+      li #[strong Copies available:] !{availableBookInstances}
+      li #[strong Authors:] !{authors}
+      li #[strong Genres:] !{genres}
